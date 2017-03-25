@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Client for https://www.swedbank.ee",
   "bin": {
-    "swedbank-ee-client": "./bin/cli.js"
+    "swedbank-ee-client": "./dist.es5/cli.js"
   },
   "scripts": {
     "gulp": "gulp",
@@ -11,9 +11,7 @@
     "clean": "gulp clean",
     "compile": "gulp compile",
     "assemble": "gulp assemble",
-    "gen": "gulp gen",
-    "watch": "gulp watch",
-    "start": "ts-node ./cli.ts",
+    "start": "ts-node ./bin/cli.ts",
     "test": "gulp test",
     "postinstall": "typings install",
     "mocha": "mocha",
@@ -32,13 +30,16 @@
   },
   "homepage": "https://github.com/brainbeanapps/swedbank-ee-client#readme",
   "dependencies": {
+    "@types/cheerio": "^0.22.0",
     "@types/node": "^7.0.11",
     "@types/request": "0.0.42",
     "@types/request-promise": "^4.1.33",
+    "@types/yargs": "^6.6.0",
     "babel-core": "^6.24.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-es2015": "^6.24.0",
+    "cheerio": "^0.22.0",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
@@ -55,7 +56,8 @@
     "tough-cookie": "^2.3.2",
     "ts-node": "^3.0.2",
     "typescript": "^2.2.1",
-    "typings": "^2.1.0"
+    "typings": "^2.1.0",
+    "yargs": "^7.0.2"
   },
   "devDependencies": {
     "@types/chai": "^3.4.35",

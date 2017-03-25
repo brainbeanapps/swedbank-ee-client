@@ -2,10 +2,10 @@ const gulp = require('gulp');
 const del = require('del');
 const util = require('gulp-util');
 
-gulp.task('clean:js', function () {
+gulp.task('clean:es6', function () {
     return del([
-        'bin/**/*.js',
-        'bin/**/*.js.map'
+        'dist.es6/**/*.js',
+        'dist.es6/**/*.js.map'
     ]).then(function (paths) {
         if (paths.length <= 0)
             return;

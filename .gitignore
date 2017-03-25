@@ -1,6 +1,6 @@
 ### Project-specific
-/bin
-/obj
+/dist.es5
+/dist.es6
 /typings
 
 ### https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore

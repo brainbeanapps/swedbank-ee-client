@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 
 gulp.task('clean', [
-    'clean:ts',
-    'clean:js'
+    'clean:es6',
+    'clean:es5',
 ]);

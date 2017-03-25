@@ -4,11 +4,11 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "rootDirs": [
-      "src",
-      "gen",
+      "bin",
+      "lib",
       "test"
     ],
-    "outDir": "obj",
+    "outDir": "dist.es6",
     "noImplicitAny": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -23,9 +23,8 @@
     "typings/index.d.ts"
   ],
   "include": [
-    "cli.ts",
-    "src/**/*.ts",
-    "gen/**/*.ts",
+    "bin/**/*.ts",
+    "lib/**/*.ts",
     "test/**/*.ts"
   ],
   "exclude": [
