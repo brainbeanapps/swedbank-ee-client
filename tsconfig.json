@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "rootDirs": [
+      "src",
+      "gen",
+      "test"
+    ],
+    "outDir": "obj",
+    "noImplicitAny": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "lib": [
+      "es6",
+      "dom"
+    ]
+  },
+  "files": [
+    "typings/index.d.ts"
+  ],
+  "include": [
+    "cli.ts",
+    "src/**/*.ts",
+    "gen/**/*.ts",
+    "test/**/*.ts"
+  ],
+  "exclude": [
+    "external_packages"
+  ]
+}
